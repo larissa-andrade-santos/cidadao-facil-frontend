@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/style.css">
+    <title>Cidadão Fácil</title>
+</head>
+<body>
+    <header>
+        <a class="logo" href="index.html">Cidadão Fácil</a>   
+        <nav>
+            <ul>
+                <!--Links de navegação para as demais páginas do projeto-->
+                <li><a href="index.html">Início</a></li>
+                <li><a href="servicos.html">Serviços</a></li>
+                <li><a href="assistente.html">Assistente</a></li>
+                <li><a href="historico.html" aria-current="page">Historico</a></li>
+            </ul>
+        </nav>     
+    </header>
+
+    <main>
+        <section>
+            </nav>
+            <h1>Seu histórico de consultas</h1>
+            <p class="subtitulo">O histórico é opcional. Você escolhe se quer guardar as suas consultas e pode apagar quando quiser.</p>
+            <div class="opcao">
+                <input type="checkbox" id="historico-ligado" name="historico-ligado" checked>
+                <label for="historico-ligado">Guardar meu histórico de consultas</label>
+            </div>
+        </section>
+
+        <section>
+            <h2>Serviços que você consultou</h2>
+            <ul class="historico">
+                <li>
+                    <div>
+                        <h3>Segunda via do RG</h3>
+                        <p class="data">Hoje, 09:15 · 2 de 5 etapas</p>
+                        <div class="progresso" role="progressbar" aria-label="Progresso na segunda via do RG" aria-valuemin="0" aria-valuemax="100" aria-valuenow="40">
+                            <div style="width: 40%;"></div>
+                        </div>
+                    </div>
+                    <a class="botao botao-secundario" href="etapas.html">Continuar</a>
+                </li>
+                <li>
+                    <div>
+                        <h3>Consultar a situação do CPF</h3>
+                        <p class="data">Ontem · 3 de 3 etapas</p>
+                        <div class="progresso" role="progressbar" aria-label="Progresso na consulta do CPF" aria-valuemin="0" aria-valuemax="100" aria-valuenow="100">
+                            <div style="width: 100%;"></div>
+                        </div>
+                    </div>
+                    <a class="botao botao-secundario" href="servico.html">Ver de novo</a>
+                </li>
+                <li>
+                    <div>
+                        <h3>Segunda via da certidão de nascimento</h3>
+                        <p class="data">9 de novembro · 0 de 4 etapas</p>
+                        <div class="progresso" role="progressbar" aria-label="Progresso na certidão de nascimento" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+                            <div style="width: 0%;"></div>
+                        </div>
+                    </div>
+                    <a class="botao botao-secundario" href="servico.html">Começar</a>
+                </li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Perguntas ao assistente</h2>
+            <ul class="historico">
+                <li>
+                    <div>
+                        <h3>Como faço para tirar minha segunda via do RG?</h3>
+                        <p class="data">Assunto: Segunda via do RG · Hoje, 09:12</p>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <h3>Como consultar meu CPF?</h3>
+                        <p class="data">Assunto: Situação do CPF · Ontem</p>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <h3>Quero marcar o INSS</h3>
+                        <p class="data">Assunto: INSS e aposentadoria · 9 de novembro</p>
+                    </div>
+                </li>
+            </ul>
+        </section>
+
+        <section>
+            <button class="botao botao-perigo" type="button">Apagar meu histórico</button>
+        </section>
+    </main>
+
+    <footer>
+        <!-- Footer utilizado em todas as páginas-->
+            <p>O Cidadão Fácil orienta, mas não substitui os sistemas oficiais do governo. Os pedidos são feitos nos canais oficiais.</p>
+    </footer>
+</body>
+</html>
