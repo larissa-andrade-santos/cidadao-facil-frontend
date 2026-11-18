@@ -22,13 +22,21 @@
 
     <main>
         <section class="apresentacao">
-            <h1>Serviços públicos explicados, um passo de cada vez</h1>
-            <p>Escolha o que você precisa resolver e te direcionaremos de forma simples. Sem pressa e sem termos difíceis.</p>
-            <strong>O que você precisa fazer hoje?</strong>
-            <input type="search" name="pesquisa" placeholder="Ex: Segunda via do RG">
-            <button type="submit">Buscar</button>
-            <p>Prefere conversar?</p>
-            <button>Fale com um assistente</button>
+            <div class="apresentacao-texto">
+                <h1>Serviços públicos explicados, um passo de cada vez</h1>
+                <p>Escolha o que você precisa resolver e te direcionaremos de forma simples. Sem pressa e sem termos difíceis.</p>
+                <form class="busca">
+                    <label for="pesquisa">O que você precisa fazer hoje?</label>
+                    <div class="busca-input">
+                        <input type="search" name="pesquisa" placeholder="Ex: Segunda via do RG">
+                    </div>
+                    <button type="submit" class="botao">Buscar</button>
+                </form>
+            </div>
+            <div class="conversar-assistente">
+                <p>Prefere conversar?</p>
+                <button class="botao-secundario">Fale com um assistente</button>
+            </div>
         </section>        
 
         <section>
@@ -37,22 +45,25 @@
                 <li>
                     <h3>Segunda via do RG</h3>
                     <p>Perdeu, teve o documento roubado ou ele está danificado</p>
-                    <a href="#">Ver passo a passo</a>
+                    <a href="#" class="link">Ver passo a passo →</a>
                 </li>
                 <li>
-                    <h3>Consultar a situação do CPF</h3>
+                    <h3>Consultar a situação do seu CPF</h3>
                     <p>Veja se o seu cadastro está regular</p>
+                    <a href="#" class="link">Ver passo a passo →</a>
                 </li>
                 <li>
                     <h3>Segunda via da certidão de nascimento</h3>
                     <p>Peça uma cópia do seu registro</p>
+                    <a href="#" class="link">Ver passo a passo →</a>
                 </li>
                 <li>
                     <h3>Agendar atendimento no INSS</h3>
                     <p>Marque um horário ou acompanhe seu pedido</p>
+                    <a href="#" class="link">Ver passo a passo →</a>
                 </li>
             </ul>
-            <a href="#">Ver todas as categorias →</a>
+            <a href="#" class="categorias">Ver todas as categorias →</a>
         </section>
 
         <section class="resumo">
@@ -80,6 +91,7 @@
     <footer>
         <!-- Footer utilizado em todas as páginas-->
             <p>O Cidadão Fácil orienta, mas não substitui os sistemas oficiais do governo. Os pedidos são feitos nos canais oficiais.</p>
+            <p>NORTEIA</p>
     </footer>
 </body>
 </html>

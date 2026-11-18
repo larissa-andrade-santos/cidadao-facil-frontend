@@ -1,3 +1,4 @@
+/*Estilo geral das páginas*/
 * {
     margin: 0;
     padding: 0;
@@ -45,6 +46,7 @@ header {
     background-color: #ffffff;
 }
 
+/*estilo da logo e navegação da página*/
 .logo {
     font-size: 30px;
     font-weight: bold;
@@ -73,7 +75,7 @@ nav a:hover {
     background-color: #e0f0ed;
 }
 
-/* Página atual no menu */
+/* Página atual na navegação */
 nav a[aria-current="page"] {
     background-color: #e0f0ed;
     font-weight: bold;
@@ -104,252 +106,110 @@ article {
     border-top: 1px solid #d6e2da;
 }
 
-.container {
-    background-color: #064b33;
-    color: #ffffff;
-    text-align: center;
+/*Apresentação da página inicial*/
+.apresentacao {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 40px;
 }
 
+/*Campo de busca de serviços*/
+.busca {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.busca label {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.busca-input {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.busca-input input {
+  width: 320px;
+  height: 40px;
+  padding: 0 18px;
+  font-size: 16px;
+  border: 2px solid #6f817d;
+  border-radius: 14px;
+  box-sizing: border-box;
+  outline: none;
+}
+
+.botao {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 320px;
+    height: 40px;
+    padding: 0 32px;
+    border: 2px solid;
+    border-radius: 12px;
+    background-color: #0B6B5D;
+    color: #ffffff;
+    font-family: inherit;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.conversar-assistente {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 12px 20px;
+}
+
+.conversar-assistente p {
+    margin-top: 15px;
+    font-size: 19px;
+    color: #000000;
+}
+
+.botao-secundario {
+    border: 2px solid #0B6B5D;
+    border-radius: 20px;
+    width: 200px;
+    height: 50px;
+    background-color: #ffffff;
+    color: #0B6B5D;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/*estilo de blocos dos serviços mais procurados*/
 .blocos {
     display: grid;
     grid-template-columns: repeat(4, minmax(0, 1fr));
-    gap: 20px;
-    width: 100%;
-    padding: 0;
-    margin: 24px 0;
-    list-style: none;
+    gap: 24px;
 }
 
 .blocos li {
-    width: auto;
-    max-width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
     min-width: 0;
-    margin: 0;
     padding: 24px;
+    border: 1px solid;
     border-radius: 16px;
     background-color: #ffffff;
-    border-color: #000000;
-    border-style: solid;
-    border-width: 1px;
+}
+
+.blocos li:hover {
+    border-color: #263431;
+    border: 2px solid;
 }
 
 .blocos a {
     text-decoration: none;
-}
-
-.resumo {
-    background-color: #e0f0ed;
-    padding: 50px 48px;
-    border-radius: 36px;
-    width: 100%;
-    box-sizing: border-box;
-    margin: 50px 0;
-}
-
-.resumo h2 {
-    font-size: 40px;
-    font-weight: 700;
-    color: #101d1b;
-    margin: 0 0 46px;
-}
-
-.resumo ul {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 60px;
-
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.resumo li {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-}
-
-/* Círculos numerados */
-.resumo .numero {
-    background-color: #087568;
-    color: white;
-
-    width: 72px;
-    height: 72px;
-    border-radius: 50%;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    font-size: 30px;
-    font-weight: bold;
-
-    margin: 0 0 20px;
-}
-
-/* Título */
-.resumo h3 {
-    font-size: 28px;
-    font-weight: 700;
-    color: #101d1b;
-    margin: 0 0 22px;
-}
-
-/* Descrições */
-.resumo li p {
-    font-size: 25px;
-    line-height: 1.6;
-    color: #263431;
-    margin: 0;
-}
-
-footer {
-    padding: 30px 6%;
-    text-align: center;
-    font-size: 18px;
-    background-color: #263431;
-    color: #ffffff;
-}
-
-
-/* ==========================================================
-   Componentes das demais telas
-   ========================================================== */
-
-/* Migalhas de pão: Início > Serviços > Documentos pessoais */
-.migalhas ol {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 8px;
-    list-style: none;
-    padding: 0;
-    margin: 0 0 24px;
-    font-size: 18px;
-}
-
-.migalhas li {
-    margin: 0;
-}
-
-.migalhas li + li::before {
-    content: "›";
-    margin-right: 8px;
-}
-
-/* Subtítulo logo abaixo do h1 */
-.subtitulo {
-    font-size: 22px;
-    color: #46534f;
-    max-width: 760px;
-}
-
-/* Botões */
-.botao {
-    display: inline-block;
-    min-height: 56px;
-    padding: 16px 32px;
-    border: 2px solid #064b33;
-    border-radius: 12px;
-    background-color: #064b33;
-    color: #ffffff;
-    font-family: inherit;
-    font-size: 20px;
-    font-weight: bold;
-    text-align: center;
-    text-decoration: none;
-    cursor: pointer;
-}
-
-.botao:hover {
-    background-color: #087568;
-    border-color: #087568;
-}
-
-.botao-secundario {
-    background-color: #ffffff;
-    color: #064b33;
-}
-
-.botao-secundario:hover {
-    background-color: #e0f0ed;
-    border-color: #064b33;
-}
-
-.botao-perigo {
-    background-color: #ffffff;
-    border-color: #9b2c2c;
-    color: #9b2c2c;
-}
-
-.botao-perigo:hover {
-    background-color: #9b2c2c;
-    border-color: #9b2c2c;
-    color: #ffffff;
-}
-
-/* Formulários e busca */
-form {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-    max-width: 640px;
-}
-
-label {
-    font-size: 20px;
-    font-weight: bold;
-}
-
-input[type="text"] {
-    width: 100%;
-    min-height: 56px;
-    padding: 0 16px;
-    border: 2px solid #6b7b76;
-    border-radius: 12px;
-    background-color: #ffffff;
-    font-family: inherit;
-    font-size: 20px;
-}
-
-.busca {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 12px;
-}
-
-.busca input {
-    flex: 1 1 280px;
-    min-width: 0;
-}
-
-input[type="checkbox"] {
-    width: 28px;
-    height: 28px;
-    accent-color: #064b33;
-}
-
-.opcao {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    gap: 14px;
-    margin-bottom: 16px;
-}
-
-.opcao label {
-    font-size: 19px;
-    font-weight: normal;
-}
-
-/* Variações dos blocos (3 colunas nas categorias, 1 coluna na lista) */
-.blocos-3 {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-}
-
-.blocos-lista {
-    grid-template-columns: minmax(0, 1fr);
 }
 
 .blocos li:hover {
@@ -359,228 +219,98 @@ input[type="checkbox"] {
 .blocos h3 {
     font-size: 24px;
     margin-bottom: 10px;
+    color: #11201C;
 }
 
 .blocos p {
     color: #46534f;
 }
 
-.blocos .acao {
+.blocos .link {
     font-weight: bold;
     color: #064b33;
 }
 
-/* Layout com menu lateral (lista de serviços) */
-.com-lateral {
-    display: grid;
-    grid-template-columns: 260px minmax(0, 1fr);
-    gap: 40px;
-    align-items: start;
-}
-
-.lateral ul {
-    display: flex;
-    flex-direction: column;
-    gap: 6px;
-    list-style: none;
-    padding: 0;
-}
-
-.lateral a {
-    display: block;
-    padding: 12px 16px;
-    border-radius: 10px;
-    font-size: 19px;
-    color: #000000;
-    text-decoration: none;
-}
-
-.lateral a:hover {
-    background-color: #e0f0ed;
-}
-
-.lateral a[aria-current="page"] {
-    background-color: #e0f0ed;
+/*Link para os serviços disponíveis na plataforma*/
+.categorias {
+    display: inline-flex;
+    align-items: center;
+    min-height: 48px;
+    font-size: 20px;
     font-weight: bold;
+    color: #064b33;
 }
 
-/* Resumo do serviço: onde fazer, como é feito, custo */
-.info {
+/*Resumo explicativo de como usar a plataforma*/
+.resumo {
+    width: 90%;
+    padding: 40px 32px;
+    border-radius: 24px;
+    background-color: #E1F0EC;
+    margin: 60px;
+}
+
+.resumo ul {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 20px;
-    list-style: none;
-    padding: 0;
-    margin: 24px 0;
+    gap: 32px;
+    margin-top: 28px;
 }
 
-.info li {
-    margin: 0;
-    padding: 22px;
-    border: 1px solid #d6e2da;
-    border-radius: 16px;
-    background-color: #ffffff;
-}
-
-.info strong {
-    display: block;
-    margin-bottom: 6px;
-    font-size: 17px;
-    color: #46534f;
-}
-
-/* Etapas do passo a passo */
-.etapas {
-    list-style: none;
-    padding: 0;
-    margin: 24px 0;
+.resumo li {
     display: flex;
     flex-direction: column;
-    gap: 16px;
+    gap: 10px;
 }
 
-.etapas li {
-    margin: 0;
-    padding: 20px 24px;
-    border: 2px solid #d6e2da;
-    border-radius: 16px;
-    background-color: #ffffff;
-}
-
-.etapas h3 {
-    font-size: 22px;
-    margin-bottom: 8px;
-}
-
-.etapas .estado {
-    font-size: 17px;
-    color: #46534f;
-}
-
-.etapas .aberta {
-    border-color: #064b33;
-}
-
-.etapas .concluida {
-    background-color: #e0f0ed;
-}
-
-.etapas .concluida h3::before {
-    content: "✓ ";
-    color: #064b33;
-}
-
-/* Barra de progresso */
-.progresso {
-    width: 100%;
-    height: 16px;
-    margin: 12px 0 16px;
-    border-radius: 8px;
-    background-color: #e0f0ed;
-    overflow: hidden;
-}
-
-.progresso div {
-    height: 100%;
-    border-radius: 8px;
-    background-color: #064b33;
-}
-
-.porcentagem {
-    font-size: 48px;
-    font-weight: bold;
-    color: #064b33;
-}
-
-/* Chatbot */
-.chat {
-    max-width: 800px;
-    border: 1px solid #d6e2da;
-    border-radius: 20px;
-    background-color: #ffffff;
-    overflow: hidden;
-}
-
-.mensagens {
+.resumo .numero {
     display: flex;
-    flex-direction: column;
-    gap: 16px;
-    height: 500px;
-    padding: 24px;
-    overflow-y: auto;
-    background-color: #FAFAFA;
-}
-
-.mensagem {
-    max-width: 85%;
-    margin: 0;
-    padding: 14px 18px;
-    font-size: 19px;
-    line-height: 1.45;
-}
-
-.mensagem-usuario {
-    align-self: flex-end;
-    background-color: #064b33;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background-color: #0B6B5D;
     color: #ffffff;
-    border-radius: 18px 18px 4px 18px;
+    font-size: 22px;
+    font-weight: bold;
 }
 
-.mensagem-bot {
-    align-self: flex-start;
-    background-color: #ffffff;
-    border: 2px solid #d6e2da;
-    border-radius: 18px 18px 18px 4px;
+.resumo h3 {
+    font-size: 23px;
 }
 
-.assunto {
-    display: inline-block;
-    padding: 4px 12px;
-    border-radius: 999px;
-    background-color: #e0f0ed;
-    font-size: 16px;
+.resumo li p {
+    color: #2B3A36;
 }
 
-.chat form {
-    max-width: none;
-    padding: 20px 24px 24px;
-    border-top: 1px solid #d6e2da;
-}
-
-.sugestoes {
+/*Link para falar com atendente chatbot*/
+.atendimento {
     display: flex;
     flex-wrap: wrap;
-    gap: 12px;
-    list-style: none;
-    padding: 0;
-    margin: 16px 0;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    padding: 40px 32px;
+    gap: 20px 32px;
+    border-radius: 20px;
+    background-color: #E1F0EC;
+    margin: 60px;
 }
 
-.sugestoes li {
-    margin: 0;
+.atendimento p {
+    font-size: 14px;
+    color: #2B3A36;
 }
 
-.sugestoes button {
-    min-height: 48px;
-    padding: 10px 18px;
-    border: 2px solid #064b33;
-    border-radius: 12px;
-    background-color: #ffffff;
-    color: #064b33;
-    font-family: inherit;
-    font-size: 19px;
-    font-weight: bold;
-    cursor: pointer;
+.opcao {
+    padding: 28px;
+    border: 1px solid;
+    border-radius: 20px;
+    background-color: #E1F0EC;
 }
 
-.sugestoes button:hover {
-    background-color: #e0f0ed;
-}
-
-/* Histórico */
 .historico {
-    list-style: none;
-    padding: 0;
     display: flex;
     flex-direction: column;
     gap: 16px;
@@ -592,117 +322,26 @@ input[type="checkbox"] {
     align-items: center;
     justify-content: space-between;
     gap: 12px 24px;
-    margin: 0;
     padding: 22px 24px;
-    border: 1px solid #d6e2da;
+    border: 1px solid #000000;
     border-radius: 16px;
-    background-color: #ffffff;
+    background-color: #F4F7F6;
 }
 
-.data {
-    font-size: 17px;
-    color: #46534f;
-}
-
-/* Avisos, estado vazio e confirmação */
-.aviso {
-    padding: 20px 24px;
-    border-radius: 16px;
-    background-color: #e0f0ed;
+.historico .botao {
+    min-height: 52px;
     font-size: 19px;
 }
 
-.vazio {
-    padding: 40px 32px;
-    border: 2px dashed #6b7b76;
-    border-radius: 20px;
+.botao-apagar {
     background-color: #ffffff;
+    border-color: #A82420;
+    color: #A82420;
 }
 
-.confirmacao {
-    max-width: 560px;
-    padding: 24px;
-    border: 2px solid #9b2c2c;
-    border-radius: 16px;
-    background-color: #ffffff;
-}
-
-.acoes {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 12px;
-}
-
-
-/* ==========================================================
-   Responsivo
-   ========================================================== */
-
-@media (max-width: 1000px) {
-    .blocos,
-    .blocos-3 {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
-
-    .resumo ul {
-        grid-template-columns: 1fr;
-        gap: 32px;
-    }
-
-    .info {
-        grid-template-columns: 1fr;
-    }
-
-    .com-lateral {
-        grid-template-columns: 1fr;
-        gap: 24px;
-    }
-}
-
-@media (max-width: 640px) {
-    h1 {
-        font-size: 32px;
-    }
-
-    h2 {
-        font-size: 26px;
-    }
-
-    .blocos,
-    .blocos-3 {
-        grid-template-columns: 1fr;
-    }
-
-    .resumo {
-        padding: 32px 20px;
-        border-radius: 24px;
-    }
-
-    .resumo h2 {
-        font-size: 30px;
-        margin-bottom: 28px;
-    }
-
-    .resumo li p {
-        font-size: 20px;
-    }
-
-    .mensagens {
-        height: 420px;
-        padding: 16px;
-    }
-
-    .mensagem {
-        max-width: 95%;
-    }
-
-    .botao {
-        width: 100%;
-    }
-}
-
-@media (prefers-reduced-motion: reduce) {
-    * {
-        transition: none !important;
-    }
+footer {
+    padding: 32px max(24px, calc((100% - 1120px) / 2 + 24px));
+    background-color: #0B6B5D;
+    color: #ffffff;
+    font-size: 14px;
 }

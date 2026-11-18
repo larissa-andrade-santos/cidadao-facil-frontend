@@ -23,53 +23,64 @@
     <main>
         <section>
             <h1>O que você precisa resolver?</h1>
-            <p>Escolha uma categoria para ver os serviços disponíveis</p>
-            <strong>Procurar um serviço</strong>
-            <input type="search" name="pesquisa" placeholder="Ex: Certidão de nascimento">
-            <button type="submit">Buscar</button>
+            <p class="subtitulo">Escolha uma categoria para ver os serviços disponíveis</p>
+            <form class="busca">
+                <label for="pesquisa">Procurar um serviço</label>
+                <div class="busca-input">
+                    <input type="search" name="pesquisa" placeholder="Ex: Certidão de nascimento">
+                </div>
+                <button type="submit" class="botao">Buscar</button>
+            </form>
+        </section>
+            
+        <section>
             <ul class="blocos">
                 <li>
                     <h3>Documentos pessoais</h3>
                     <p>RG, CPF, certidões, passaporte e carteira de trabalho.</p>
-                    <a href="#">6 serviços</a>
+                    <a href="lista-servicos.html" class="link">6 serviços</a>
                 </li>
                 <li>
                     <h3>Trabalho e renda</h3>
                     <p>Carteira de trabalho, seguro desemprego e declaração de imposto de renda.</p>
-                    <a href="#">5 serviços</a>
+                    <a href="lista-servicos.html" class="link">5 serviços</a>
                 </li>
                 <li>
                     <h3>Saúde</h3>
                     <p>Cartão do SUS, vacinação e atendimento na rede pública.</p>
-                    <a href="#">4 serviços</a>
+                    <a href="lista-servicos.html" class="link">4 serviços</a>
                 </li>
                 <li>
                     <h3>INSS e aposentadoria</h3>
                     <p>Agendamento, benefícios e acompanhamento de pedidos.</p>
-                    <a href="#">5 serviços</a>
+                    <a href="lista-servicos.html" class="link">5 serviços</a>
                 </li>
                 <li>
                     <h3>Eleições</h3>
                     <p>Título de eleitor, local de votação e regularização.</p>
-                    <a href="#">3 serviços</a>
+                    <a href="lista-servicos.html" class="link">3 serviços</a>
                 </li>
                 <li>
                     <h3>Trânsito e veículos</h3>
                     <p>Carteira de habilitação, licenciamento e multas.</p>
-                    <a href="#">4 serviços</a>
+                    <a href="lista-servicos.html" class="link">4 serviços</a>
                 </li>
             </ul>
+        </section>
 
-            <section>
+        <section class="atendimento">
+            <div>
                 <h2>Não achou o que procura?</h2>
                 <p>Escreva sua dúvida para um atendente. Ele indica o serviço certo.</p>
-                <button>Falar com assistente</button>
-            </section>
+            </div>
+            <a class="botao" href="assistente.html">Falar com assistente</a>
+        </section>
     </main>
 
     <footer>
         <!-- Footer utilizado em todas as páginas-->
             <p>O Cidadão Fácil orienta, mas não substitui os sistemas oficiais do governo. Os pedidos são feitos nos canais oficiais.</p>
+            <p>NORTEIA</p>
     </footer>
 </body>
 </html>
