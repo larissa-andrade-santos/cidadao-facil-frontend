@@ -27,7 +27,14 @@
             <p class="subtitulo">Escreva do seu jeito. Ele identifica o assunto e leva você até a orientação certa.</p>
 
             <!-- Área reservada para a integração com o chatbot -->
-            <div class="chat" id="chatbot"></div>
+            <div class="chat" id="chatbot">
+    <deep-chat id="lupi-chat"
+        connect='{"url":"http://localhost:1880/cidadao-facil/chat","method":"POST"}'
+        introMessage='{"text":"Oi! Eu sou o Lupi. Posso ajudar você a marcar atendimento, ver documentos, achar uma unidade, entender prioridade e direitos, ou chamar um atendente. O que você precisa?"}'
+        textInput='{"placeholder":{"text":"Escreva sua mensagem aqui..."}}'
+        style="width:100%;height:520px;border-radius:16px;font-size:18px;">
+    </deep-chat>
+            </div>
 
             <p class="aviso">O assistente orienta, mas o pedido é feito no site ou no posto oficial. Nunca informe senhas no chat.</p>
         </section>
@@ -38,5 +45,28 @@
             <p>O Cidadão Fácil orienta, mas não substitui os sistemas oficiais do governo. Os pedidos são feitos nos canais oficiais.</p>
             <p>NORTEIA</p>
     </footer>
+             <!-- Chatbot Lupi (Deep Chat) -->
+             <script type="module" src="https://unpkg.com/deep-chat@2.2.1/dist/deepChat.bundle.js"></script>
+             <script>
+        customElements.whenDefined('deep-chat').then(function () {
+            var chat = document.getElementById('lupi-chat');
+            var sid = sessionStorage.getItem('lupiSession');
+            if (!sid) {
+                sid = 'site' + Math.random().toString(36).slice(2, 10);
+                sessionStorage.setItem('lupiSession', sid);
+            }
+            // o que o site envia para o Node-RED
+            chat.requestInterceptor = function (req) {
+                var msgs = (req.body && req.body.messages) || [];
+                var ultima = msgs.length ? msgs[msgs.length - 1].text : '';
+                req.body = { text: ultima, sessionId: sid };
+                return req;
+            };
+            // o que o Node-RED devolve para o chat
+            chat.responseInterceptor = function (res) {
+                return { text: res.texto || 'Desculpe, pode repetir?' };
+            };
+        });
+    </script>
 </body>
 </html>
