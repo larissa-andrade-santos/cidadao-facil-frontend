@@ -339,6 +339,100 @@ article {
     color: #A82420;
 }
 
+/*Edição da página dos integrantes*/
+
+.apresentacao-equipe {
+    text-align: center;
+    padding: 64px 24px 64px;
+}
+
+.apresentacao-equipe h1 {
+    margin: 0 0 8px;
+}
+
+.apresentacao-equipe p {
+    margin: 0 auto;
+    max-width: 560px;
+    font-size: 18px;
+}
+
+.bloco-integrante {
+    list-style: none;
+    margin: 0;
+    padding: 0 20px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.bloco-integrante li {
+  width: 260px;
+  padding: 30px 20px;
+  background: #f3f5f4;
+  border-radius: 16px;
+  text-align: center;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.bloco-integrante li:hover {
+    transform: scale(1.05);
+}
+ 
+.integrante {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90px;
+    height: 90px;
+    object-fit: cover;
+    margin: 0 auto 20px;
+    border-radius: 50%;
+    background-color: #25ce75;
+    color: #064b33;
+    font-size: 26px;
+    font-weight: bold;
+}
+ 
+.integrante-contato {
+    background-color: #064b33;
+    color: #ffffff;
+    text-align: center;
+}
+
+.secao-equipe {
+    padding: 0;
+    margin: 0;
+    max-width: none;
+}
+.equipe {
+    color: #11201C;
+    background-color: #E1F0EC;
+    width: 100%;
+    margin-left: calc(50% - 50%);
+    box-sizing: border-box;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.apresentacao-projeto {
+    
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    padding: 40px 32px;
+    gap: 20px 32px;
+    border-radius: 20px;
+    background-color: #E1F0EC;
+    margin: 20px;
+}
+
+.apresentacao-projeto p {
+    font-size: 16px;
+    color: #2B3A36;
+    margin-bottom: 20px;
+}
+
 footer {
     padding: 32px max(24px, calc((100% - 1120px) / 2 + 24px));
     background-color: #0B6B5D;
