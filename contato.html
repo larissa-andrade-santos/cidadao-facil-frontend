@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/style.css">
+    <title>Cidadão Fácil</title>
+</head>
+<body>
+    <header>
+        <a class="logo" href="index.html">Cidadão Fácil</a>   
+        <nav>
+            <ul>
+                <!--Links de navegação para as demais páginas do projeto-->
+                <li><a href="index.html">Início</a></li>
+                <li><a href="servicos.html">Serviços</a></li>
+                <li><a href="assistente.html">Assistente</a></li>
+                <li><a href="historico.html">Historico</a></li>
+                <li><a href="contato.html" aria-current="page">Contato</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="integrantes.html">Integrantes</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+            </ul>
+        </nav>     
+    </header>
+
+    <main>
+        <section>
+            <h1>Fale com a equipe</h1>
+            <p>Envie uma dúvida, sugestão ou comentário.</p>
+
+            <form id="formulario">
+                <div class="campo">
+                    <label for="nome">Nome</label>
+                    <input type="text" id="nome" name="nome" placeholder="Seu nome completo" required>
+                </div>
+
+                <div class="campo">
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" name="email" placeholder="nome@exemplo.com" required>
+                </div>
+
+                <div class="campo">
+                    <label for="assunto">Assunto</label>
+                    <input type="text" id="assunto" name="assunto" placeholder="Sobre o que você quer falar?" required>
+                </div>
+
+                <div class="campo">
+                    <label for="mensagem">Mensagem</label>
+                    <textarea id="mensagem" name="mensagem" placeholder="Escreva aqui a sua mensagem" required></textarea>
+                </div>
+
+                <button class="botao-contato" type="submit">Enviar</button>
+                <p class="feedback" id="feedback" role="status" aria-live="polite"></p>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <!-- Footer utilizado em todas as páginas-->
+            <p>O Cidadão Fácil orienta, mas não substitui os sistemas oficiais do governo. Os pedidos são feitos nos canais oficiais.</p>
+            <p>NORTEIA</p>
+    </footer>
+</body>
+</html>
