@@ -16,7 +16,10 @@
                 <li><a href="servicos.html">Serviços</a></li>
                 <li><a href="assistente.html" aria-current="page">Assistente</a></li>
                 <li><a href="historico.html">Historico</a></li>
+                <li><a href="contato.html">Contato</a></li>
+                <li><a href="faq.html">FAQ</a></li>
                 <li><a href="integrantes.html">Integrantes</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
             </ul>
         </nav>     
     </header>
@@ -24,16 +27,17 @@
     <main>
         <section>
             <h1>Pergunte ao assistente</h1>
-            <p class="subtitulo">Escreva do seu jeito. Ele identifica o assunto e leva você até a orientação certa.</p>
+            <p>Escreva do seu jeito. Ele identifica o assunto e leva você até a orientação certa.</p>
 
             <!-- Área reservada para a integração com o chatbot -->
             <div class="chat" id="chatbot">
-    <deep-chat id="lupi-chat"
-        connect='{"url":"http://localhost:1880/cidadao-facil/chat","method":"POST"}'
-        introMessage='{"text":"Oi! Eu sou o Lupi. Posso ajudar você a marcar atendimento, ver documentos, achar uma unidade, entender prioridade e direitos, ou chamar um atendente. O que você precisa?"}'
-        textInput='{"placeholder":{"text":"Escreva sua mensagem aqui..."}}'
-        ></deep-chat>
-    </deep-chat>
+                <deep-chat id="lupi-chat"
+                    connect='{"url":"http://localhost:1880/cidadao-facil/chat","method":"POST"}'
+                    introMessage='{"text":"Oi! Eu sou o Lupi. Posso ajudar você a marcar atendimento, ver documentos, achar uma unidade, entender prioridade e direitos, ou chamar um atendente. O que você precisa?"}'
+                    textInput='{"placeholder":{"text":"Escreva sua mensagem aqui..."}}'
+                    style="width:100%;height:520px;border-radius:16px;font-size:18px;">
+                    </deep-chat>
+                </deep-chat>
             <div class="acoes-chat">
                 <a class="btn-telegram" href="https://t.me/LupiCidadaoFacilBot" target="_blank" rel="noopener">Conversar com o Lupi no Telegram</a>
             </div>
@@ -48,7 +52,7 @@
             <p>O Cidadão Fácil orienta, mas não substitui os sistemas oficiais do governo. Os pedidos são feitos nos canais oficiais.</p>
             <p>NORTEIA</p>
     </footer>
-             <!-- Chatbot Lupi (Deep Chat) -->
+    <!-- Chatbot Lupi (Deep Chat) -->
              <script type="module" src="https://unpkg.com/deep-chat@2.2.1/dist/deepChat.bundle.js"></script>
              <script>
         customElements.whenDefined('deep-chat').then(function () {
