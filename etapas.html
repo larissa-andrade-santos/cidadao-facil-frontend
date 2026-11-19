@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/style.css">
+    <title>Cidadão Fácil</title>
+</head>
+<body>
+    <header>
+        <a class="logo" href="index.html">Cidadão Fácil</a>   
+        <nav>
+            <ul>
+                <!--Links de navegação para as demais páginas do projeto-->
+                <li><a href="index.html">Início</a></li>
+                <li><a href="servicos.html" aria-current="page">Serviços</a></li>
+                <li><a href="assistente.html">Assistente</a></li>
+                <li><a href="historico.html">Historico</a></li>
+                <li><a href="contato.html">Contato</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="integrantes.html">Integrantes</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+            </ul>
+        </nav>     
+    </header>
+
+    <main>
+        <section class="apresentacao-etapas">
+            <h1>Passo a passo: segunda via do RG</h1>
+            <p>Leia a orientação de cada etapa. Quando terminar uma, marque como concluída.</p>
+        </section>
+
+        <section>
+            <h2>Etapas</h2>
+            <ol class="etapas">
+                <li>
+                    <h3>Etapa 1: Reúna os documentos</h3>
+                    <p class="estado">Concluída</p>
+                </li>
+                <li>
+                    <h3>Etapa 2: Faça o agendamento</h3>
+                    <p class="estado">Concluída</p>
+                </li>
+                <li>
+                    <h3>Etapa 3: Vá ao atendimento</h3>
+                    <p class="estado">Pendente</p>
+                    <p>Chegue alguns minutos antes do horário marcado. Leve os documentos originais e o protocolo do agendamento.</p>
+                    <button class="botao" type="button">Marcar como concluída</button>
+                </li>
+                <li>
+                    <h3>Etapa 4: Pague a taxa, se houver</h3>
+                    <p class="estado">Pendente</p>
+                </li>
+                <li>
+                    <h3>Etapa 5: Retire o novo RG</h3>
+                    <p class="estado">Pendente</p>
+                </li>
+            </ol>
+        </section>
+
+        <section>
+            <div class="opcao">
+                <input type="checkbox" id="guardar" name="guardar" checked>
+                <label for="guardar">Guardar esta consulta no meu histórico</label>
+            </div>
+            <a class="botao botao-secundario" href="assistente.html">Ajuda</a>
+        </section>
+    </main>
+
+    
+    <footer>
+        <!-- Footer utilizado em todas as páginas-->
+        <p>O Cidadão Fácil orienta, mas não substitui os sistemas oficiais do governo. Os pedidos são feitos nos canais oficiais.</p>
+        <p>NORTEIA</p>
+    </footer>
+</body>
+</html>
