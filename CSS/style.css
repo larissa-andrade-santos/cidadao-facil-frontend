@@ -649,4 +649,36 @@ footer {
     .bloco-texto section {
         padding: 16px 18px;
     }
+    /* Chat do Lupi (Deep Chat) */
+    #lupi-chat {
+        width: 100%;
+        height: 520px;
+        border-radius: 16px;
+        font-size: 18px;
+    }
+
+/* Botão para abrir o Lupi no Telegram */
+    .acoes-chat {
+    margin: 12px 0;
+    }
+
+    .btn-telegram {
+        display: inline-block;
+        padding: 12px 20px;
+        border-radius: 999px;
+        background: #0f6b4b;
+        color: #fff;
+        font-size: 18px;
+        text-decoration: none;
+    }
+
+    .btn-telegram:hover,
+    .btn-telegram:focus-visible {
+        background: #0b5339;
+    }
+
+    .btn-telegram:focus-visible {
+        outline: 3px solid #000;
+        outline-offset: 2px;
+    }
 }
