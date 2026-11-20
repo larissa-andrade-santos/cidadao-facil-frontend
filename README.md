@@ -132,3 +132,39 @@ cidadao-facil/
     </tr>
   </table>
 </div>
+
+## Imagens do projeto
+
+### Página inicial
+
+| Desktop | Tablet | Mobile |
+|:---:|:---:|:---:|
+| <img src="imagens/index.jpeg" alt="Página inicial no desktop" width="500"> | <img src="imagens/tablet.jpeg" alt="Página inicial no tablet" width="250"> | <img src="imagens/mobile.jpeg" alt="Página inicial no mobile" width="150"> |
+
+### Serviços
+
+<img src="imagens/servicos.jpeg" alt="Página de serviços" width="700">
+
+### Assistente
+
+<img src="imagens/assistente.jpeg" alt="Página do assistente" width="700">
+
+### Histórico
+
+<img src="imagens/historico.jpeg" alt="Página de histórico" width="700">
+
+### Contato
+
+<img src="imagens/contato.jpeg" alt="Página de contato" width="700">
+
+### FAQ
+
+<img src="imagens/faq.jpeg" alt="Página de FAQ" width="700">
+
+### Integrantes
+
+<img src="imagens/integrantes.jpeg" alt="Página de integrantes" width="700">
+
+### Sobre
+
+<img src="imagens/sobre.jpeg" alt="Página sobre" width="700">
