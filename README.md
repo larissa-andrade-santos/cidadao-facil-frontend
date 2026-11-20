@@ -81,10 +81,54 @@ cidadao-facil/
 └── README.md
 ```
 
-## Autores
 
-- *Beatriz Fernandes Silva* - [LinkedIn](https://www.linkedin.com/in/beatrizfernandesilva/) | GitHub: https://github.com/olabeatrizfsilva
-- *Giovanna Alcard Souza Silva* - [LinkedIn](https://www.linkedin.com/in/giovanna-alcard/) | GitHub: https://github.com/gialcard7-gif
-- *Guilherme Oliveira* - [LinkedIn](https://www.linkedin.com/in/guilherme-oliveira-gomes-4b0735394/) | GitHub: https://github.com/guioliveirag
-- *Henrique Coelho* - [LinkedIn](https://www.linkedin.com/in/henrique-fernandes-coelho-824665344/) | GitHub: https://github.com/henrique-fernandes-coelho1
-- *Larissa Andrade dos Santos* - [LinkedIn](www.linkedin.com/in/larissaandradesant) | GitHub: https://github.com/larissa-andrade-santos
+## 👥 Integrantes
+
+<div align="center">
+  <table>
+    <tr>
+      <td align="center">
+        <img src="imagens/beatriz.jpeg" width="120px" alt="Beatriz Fernandes Silva"/>
+        <br />
+        <strong>Beatriz Fernandes Silva</strong>
+        <br />
+        <a href="https://www.linkedin.com/in/beatrizfernandesilva/">LinkedIn</a> |
+        <a href="https://github.com/olabeatrizfsilva">GitHub</a>
+      </td>
+      <td align="center">
+        <img src="imagens/giovanna.jpeg" width="120px" alt="Giovanna Alcard Souza Silva"/>
+        <br />
+        <strong>Giovanna Alcard Souza Silva</strong>
+        <br />
+        <a href="https://www.linkedin.com/in/giovanna-alcard/">LinkedIn</a> |
+        <a href="https://github.com/gialcard7-gif">GitHub</a>
+      </td>
+      <td align="center">
+        <img src="imagens/guilherme.jpeg" width="120px" alt="Guilherme Oliveira"/>
+        <br />
+        <strong>Guilherme Oliveira</strong>
+        <br />
+        <a href="https://www.linkedin.com/in/guilherme-oliveira-gomes-4b0735394/">LinkedIn</a> |
+        <a href="https://github.com/guioliveirag">GitHub</a>
+      </td>
+    </tr>
+    <tr>
+      <td align="center">
+        <img src="imagens/henrique.jpeg" width="120px" alt="Henrique Coelho"/>
+        <br />
+        <strong>Henrique Coelho</strong>
+        <br />
+        <a href="https://www.linkedin.com/in/henrique-fernandes-coelho-824665344/">LinkedIn</a> |
+        <a href="https://github.com/henrique-fernandes-coelho1">GitHub</a>
+      </td>
+      <td align="center">
+        <img src="imagens/larissa.jpeg" width="120px" alt="Larissa Andrade dos Santos"/>
+        <br />
+        <strong>Larissa Andrade dos Santos</strong>
+        <br />
+        <a href="https://www.linkedin.com/in/larissaandradesant/">LinkedIn</a> |
+        <a href="https://github.com/larissa-andrade-santos">GitHub</a>
+      </td>
+    </tr>
+  </table>
+</div>
