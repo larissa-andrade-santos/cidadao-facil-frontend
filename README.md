@@ -6,7 +6,7 @@ O site orienta a pessoa em cada etapa de um serviço público, com passo a passo
 
 ## 🌐 Acesse
 
-https://larissa-andrade-santos.github.io/cidadao-facil-frontend/index.html
+https://larissa-andrade-santos.github.io/cidadao-facil-frontend/
 
 ## Funcionalidades
 
@@ -139,32 +139,22 @@ cidadao-facil/
 
 | Desktop | Tablet | Mobile |
 |:---:|:---:|:---:|
-| <img src="imagens/index.jpeg" alt="Página inicial no desktop" width="500"> | <img src="imagens/tablet.jpeg" alt="Página inicial no tablet" width="250"> | <img src="imagens/mobile.jpeg" alt="Página inicial no mobile" width="150"> |
+| <img src="imagens/index.jpeg.png" alt="Página inicial no desktop" width="500"> | <img src="imagens/tablet.jpeg.png" alt="Página inicial no tablet" width="250"> | <img src="imagens/mobile.jpeg.png" alt="Página inicial no mobile" width="150"> |
 
-### Serviços
+### Demais páginas
 
-<img src="imagens/servicos.jpeg" alt="Página de serviços" width="700">
+| Serviços | Assistente |
+|:---:|:---:|
+| <img src="imagens/servicos.jpeg.png" alt="Página de serviços" width="450"> | <img src="imagens/assistente.jpeg.png" alt="Página do assistente" width="450"> |
 
-### Assistente
+| Histórico | Contato |
+|:---:|:---:|
+| <img src="imagens/historico.jpeg.png" alt="Página de histórico" width="450"> | <img src="imagens/contato.jpeg.png" alt="Página de contato" width="450"> |
 
-<img src="imagens/assistente.jpeg" alt="Página do assistente" width="700">
+| FAQ | Integrantes |
+|:---:|:---:|
+| <img src="imagens/faq.jpeg.png" alt="Página de FAQ" width="450"> | <img src="imagens/integrantes.jpeg.png" alt="Página de integrantes" width="450"> |
 
-### Histórico
-
-<img src="imagens/historico.jpeg" alt="Página de histórico" width="700">
-
-### Contato
-
-<img src="imagens/contato.jpeg" alt="Página de contato" width="700">
-
-### FAQ
-
-<img src="imagens/faq.jpeg" alt="Página de FAQ" width="700">
-
-### Integrantes
-
-<img src="imagens/integrantes.jpeg" alt="Página de integrantes" width="700">
-
-### Sobre
-
-<img src="imagens/sobre.jpeg" alt="Página sobre" width="700">
+| Sobre |
+|:---:|
+| <img src="imagens/sobre.jpeg.png" alt="Página sobre" width="450"> |
