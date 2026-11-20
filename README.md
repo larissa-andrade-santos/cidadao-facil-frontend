@@ -73,11 +73,21 @@ cidadao-facil/
 ├── CSS
 │   └── style.css
 ├── imagens
+│   └── assistente.jpeg
 │   └── beatriz.jpeg
+│   └── contato.jpeg
+│   └── faq.jpeg
 │   └── giovanna.jpeg
 │   └── guilherme.jpeg
 │   └── henrique.jpeg
+│   └── historico.jpeg
+│   └── index.jpeg
+│   └── integrantes.jpeg
 │   └── larissa.jpeg
+│   └── mobile.jpeg
+│   └── servicos.jpeg
+│   └── sobre.jpeg
+│   └── tablet.jpeg
 └── README.md
 ```
 
